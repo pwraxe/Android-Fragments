@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment
+        android:id="@+id/fragment_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.akshay.fragmentdemo.ComputerFrag"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linear_dept"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_computer"
+                android:layout_width="100sp"
+                android:onClick="openFragment"
+                android:layout_height="100sp"
+                app:cardCornerRadius="15sp"
+                app:cardElevation="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_it"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                app:cardCornerRadius="15sp"
+                android:onClick="openFragment"
+                app:cardElevation="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IT"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_chemical"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                app:cardCornerRadius="15sp"
+                android:onClick="openFragment"
+                app:cardElevation="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chemical"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_electrical"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:onClick="openFragment"
+                app:cardCornerRadius="15sp"
+                app:cardElevation="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electrical"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_mechanical"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:onClick="openFragment"
+                app:cardCornerRadius="15sp"
+                app:cardElevation="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
